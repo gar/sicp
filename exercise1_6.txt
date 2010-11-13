@@ -1,0 +1,1 @@
+It runs for ever. new-if is evaluated using applicative-order evaluation, meaning each subexpression is evaluated before the entire logic is run through.

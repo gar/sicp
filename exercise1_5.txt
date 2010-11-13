@@ -1,0 +1,9 @@
+; SICP Exercise 1.5
+
+(define (p) (p))
+(define (test x y) (if (= x 0)
+                       0
+                       y))
+(test 0 (p))
+
+If the interpretor is using normal-order evaluation, it will try to expand all the operands before evaluating the procedures. In the case of '(test 0 (p))', it would try to evaluate '(p)' and end up in an infinite loop. If applicative-order evaluation is being used, the 'test' procedure would just evaluate to '0' without the need to expand '(p)'.

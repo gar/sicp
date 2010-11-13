@@ -1,0 +1,6 @@
+; SICP Exercise 1.4
+
+(define (a-plus-abs-b a b) 
+        ((if (> b 0) + -) a b))
+
+In the above procedure, the operator on the second line varies depending on the sign of 'b', either subtracting or add the numbers together. In effect, it is add the absolute value of 'b' to 'a'.

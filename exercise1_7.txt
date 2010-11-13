@@ -1,0 +1,3 @@
+Small number: (sqrt (* 0.02 0.02)) (i.e square root of 0.004). This fails because 
+
+
