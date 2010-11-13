@@ -1,0 +1,27 @@
+SICP Exercise 1.9
+
+First procedure:
+
+(+ 4 5)
+(inc (+ 3 5))
+(inc (inc (+ 2 5)))
+(inc (inc (inc (+ 1 5))))
+(inc (inc (inc (inc (+ 0 5)))))
+(inc (inc (inc (inc (5)))))
+(inc (inc (inc (6))))
+(inc (inc (7)))
+(inc (8))
+9
+
+This is a recursive procedure. The inc action is deferred until it is the only thing left to perform.
+
+Second procedure:
+
+(+ 4 5)
+(+ 3 6)
+(+ 2 7)
+(+ 1 8)
+(+ 0 9)
+9
+
+This is an iterative procedure. a and b are state variables, with simple rules for changing their state, and a terminating condition. The interpreter only has to keep track of a and b to carry out the process.
