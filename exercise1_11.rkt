@@ -14,6 +14,6 @@
 ; this is a bad version of an iterative verison
 ; it does not handle where n < 3
 (define (f-iter a b c count)
-    (if (= count 2)
+    (if (<= count 2)
         a
         (f-iter (+ a (* 2 b) (* 3 c)) a b (- count 1))))
