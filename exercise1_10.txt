@@ -1,0 +1,7 @@
+(A 1 10) is 1024
+(A 2 3) is 16
+(A 3 3) is 65536
+
+(f n) computes 2n
+(g n) computes 2^n
+(h n) computes ??
